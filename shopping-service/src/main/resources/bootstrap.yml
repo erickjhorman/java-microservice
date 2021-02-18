@@ -1,0 +1,9 @@
+#create configuration to connect this microservice with config-server
+spring:
+  application:
+    name: shopping-service
+  cloud:
+    config:
+      uri: http://localhost:8081
+      username: root
+      password: s3cr3t
