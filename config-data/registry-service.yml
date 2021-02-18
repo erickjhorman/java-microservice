@@ -1,7 +1,6 @@
 #Register configuration of discovery service 
 server:
   port: 8099
-
 eureka:
    instance:
      hostname: localhost

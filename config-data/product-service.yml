@@ -34,3 +34,9 @@ spring:
 logging:
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+
+#Configuration to connect to eureka server
+eureka:
+  client:
+     serviceUrl:
+       defaultZone: http://localhost:8099/eureka/
