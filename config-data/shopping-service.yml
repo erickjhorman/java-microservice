@@ -42,4 +42,14 @@ eureka:
      serviceUrl:
        defaultZone: http://localhost:8099/eureka/
 
+#hystrix configuration
+Feign:
+ hystrix:
+  enabled: true   #enable hystrix
+management:       #enable actuator's port and work with hystrix'dashboard
+  endpoints:
+    web:
+     exposure:
+      include: "*"         
+
 
