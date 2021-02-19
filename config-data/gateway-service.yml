@@ -1,6 +1,5 @@
 server:
   port: 8080
-
 #Configuration to connect to eureka server
 eureka:
   client:
