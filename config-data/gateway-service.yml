@@ -1,12 +1,12 @@
-#Application Configuration
 server:
   port: 8080
-#Configuration to connect to eureka server
+
 eureka:
   client:
-     serviceUrl:
-       defaultZone: http://localhost:8099/eureka/
- spring:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
+
+spring:
   cloud:
     gateway:
       discovery:
@@ -14,7 +14,7 @@ eureka:
           enabled: true
       routes:
         - id: customer-service
-          uri: lb://customer-service  #name of the service which is registered in eureka service
+          uri: lb://customer-service
           predicates:
             - Path=/customers/**
         - id: product-service
