@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+#Configuration to connect to eureka server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: customer-service
+          uri: lb://customer-service  #name of the service which is registered in eureka service
+          predicates:
+            - Path=/customers/**
+        - id: product-service
+          uri: lb://product-service
+          predicates:
+            - Path=/products/**
+        - id: shopping-service
+          uri: lb://shopping-service
+          predicates:
+            - Path=/invoices/**
