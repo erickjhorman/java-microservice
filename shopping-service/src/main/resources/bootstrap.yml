@@ -7,3 +7,9 @@ spring:
       uri: http://localhost:8081
       username: root
       password: s3cr3t
+
+  #create configuration to connect this microservice with admin-service
+boot:
+  admin:
+    client:
+      url:http://localhost:8086
