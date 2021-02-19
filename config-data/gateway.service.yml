@@ -6,8 +6,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8099/eureka/
-
-spring:
+ spring:
   cloud:
     gateway:
       discovery:
