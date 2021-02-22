@@ -1,2 +1,12 @@
 Eureka Service permite el
 Feign permite comunicarnos entre microservicios 
+
+Up micro-services with gradle     
+
+dashboard hystrix
+http://localhost:8093/actuator/hystrix.stream
+
+strees test 
+wrk 
+
+implementation 'de.codecentric:spring-boot-admin-starter-client'
