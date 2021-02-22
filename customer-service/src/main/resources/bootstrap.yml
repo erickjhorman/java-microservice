@@ -50,3 +50,5 @@ spring:
     admin:
       client:
         url: http://localhost:8086
+        instance:
+          service-url: http://localhost:8092/
